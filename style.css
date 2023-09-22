@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-dark: #047240;
+  --text-color: #F4F4F9;
+  --alt-text-color: #090F22;
+  --line-color: #00A59B;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color-dark);
+  color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+  margin: 1rem 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+header nav a:hover {
+  font-weight: 600;
+}
+
+/* Barra */
+hr {
+  margin: 0 3.4rem;
+  border: 1px solid var(--line-color);
+}
+
