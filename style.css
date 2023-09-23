@@ -50,6 +50,19 @@ header nav a:hover {
   font-weight: 600;
 }
 
+/* Mobile */
+header #mobile {
+  display: none;
+}
+
+header #mobile span {
+  display: block;
+  width: 50px;
+  height: 4.8px;
+  background-color: var(--text-color);
+  border-radius: 10px;
+}
+
 /* Barra */
 hr {
   margin: 0 3.4rem;
@@ -117,7 +130,7 @@ footer {
   position: relative;
 }
 
-footer div {
+footer #Techs {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -129,4 +142,70 @@ footer #men-dev {
   bottom: -22px;
   position: absolute;
   /* border: 1px solid blue; */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    margin: 1rem 3rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header #mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  header #mobile div {
+    display: none;
+  }
+
+  .slide-menu div {
+
+  }
+
+
+  hr {
+    margin: 0 3rem;
+  }
+
+  #apresentation {
+    margin: 2.5rem 1.4rem 2rem 3rem;
+  }
+  
+  #apresentation * {
+    margin: 10px 0;
+  }
+
+  footer {
+    margin: 2rem 1.4rem 1rem 3rem;
+    display: flex;
+    position: relative;
+    
+    justify-content: space-between;
+  }
+
+  footer #Techs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer #Techs img {
+    
+    width: 1.7rem;
+  }
+
+  footer #men-dev {
+    /* display: none; */
+    position: absolute;
+    max-width: 12rem;
+    padding-bottom: 0.5rem;
+
+  }
 }
