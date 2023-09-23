@@ -5,15 +5,21 @@
 }
 
 :root {
-  --bg-color-dark: #047240;
+  --bg-color: #047240;
   --text-color: #F4F4F9;
   --alt-text-color: #090F22;
   --line-color: #00A59B;
 }
 
+.light {
+  --bg-color: #edf4f3;
+  --text-color: #00C396;
+  --line-color: #047240;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--bg-color-dark);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -49,4 +55,78 @@ hr {
   margin: 0 3.4rem;
   border: 1px solid var(--line-color);
 }
+/* Switch button */
+#switch button {
+  background: white url('./assets/contrast-outline.svg') no-repeat center;
+  width: 32px;
+  height: 32px;
 
+  margin: 18px 3.4rem;
+
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+
+  transition: outline 0.2s;
+}
+
+#switch button:hover {
+  outline: 0.5rem solid var(--line-color);
+}
+
+/* Apresentação */
+#apresentation {
+  margin: 4rem 4rem 0 4rem;
+  font-size: 18px;
+  
+  max-width: 56rem;
+}
+
+#apresentation strong {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+#apresentation span {
+  font-size: 30px;
+}
+
+#apresentation p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--alt-text-color);
+  margin: 1rem 0;
+}
+
+footer {
+  height: 150px;
+  margin-left: 3.4rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+
+  position: relative;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer #men-dev {
+  /* margin-right: 3.4rem; */
+  right: 0;
+  bottom: -22px;
+  position: absolute;
+  /* border: 1px solid blue; */
+}
