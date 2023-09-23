@@ -19,18 +19,21 @@
         <a href="/">About</a>
         <a href="">Projects</a>
         <a href="">Contact</a>
+
       </nav>
 
-      <div id="mobile" class="slide-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="slide-menu-closed" onclick="ToggleMenu()">
         <div>
           <a href="/">About</a>
           <a href="">Projects</a>
           <a href="">Contact</a>
+          <button onclick="ToggleTheme()"></button>
         </div>
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
       </div>
+
     </header>
     <hr />
     <div id="switch" onclick="ToggleTheme()">

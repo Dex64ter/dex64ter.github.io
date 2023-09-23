@@ -3,3 +3,16 @@ function ToggleTheme(){
 
   html.classList.toggle('light');
 }
+
+function ToggleMenu(){
+  const menuToggle = document.querySelector('header div');
+
+  if (menuToggle.classList.contains('slide-menu-closed')) {
+    menuToggle.classList.remove('slide-menu-closed');
+    menuToggle.classList.add('slide-menu-opened');
+  }else{
+    menuToggle.classList.remove('slide-menu-opened');
+    menuToggle.classList.add('slide-menu-closed');
+  }
+}
+
