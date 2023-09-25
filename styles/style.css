@@ -9,12 +9,14 @@
   --text-color: #F4F4F9;
   --alt-text-color: #090F22;
   --line-color: #00A59B;
+  --shadow-color: #303030;
 }
 
 .light {
   --bg-color: #edf4f3;
   --text-color: #00C396;
   --line-color: #047240;
+  --shadow-color: #949494;
 }
 
 body {
@@ -25,12 +27,16 @@ body {
 
 /* Cabeçalho */
 header {
-  margin: 1rem 3.4rem;
+  padding: 1rem 3.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
+
+  background: linear-gradient(-90deg, var(--bg-color), var(--line-color) 100%);
+
+  box-shadow:  7px 7px 14px var(--shadow-color);
 }
 
 header nav {
@@ -57,12 +63,6 @@ header .slide-menu-closed {
 
 header .slide-menu-opened {
   display: none;
-}
-
-/* Barra */
-hr {
-  margin: 0 3.4rem;
-  border: 1px solid var(--line-color);
 }
 
 /* Switch button */
@@ -113,6 +113,7 @@ hr {
   margin: 1rem 0;
 }
 
+/* Footer */
 footer {
   height: 150px;
   margin-left: 3.4rem;
@@ -122,7 +123,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 1px solid red; */
 
   position: relative;
 }
@@ -134,11 +134,9 @@ footer #Techs {
 }
 
 footer #men-dev {
-  /* margin-right: 3.4rem; */
   right: 0;
   bottom: -22px;
   position: absolute;
-  /* border: 1px solid blue; */
 }
 
 /* Media Queries */
@@ -149,7 +147,7 @@ footer #men-dev {
   }
 
   header {
-    margin: 1rem 3rem;
+    padding: 1rem 3rem;
   }
 
   header nav {
@@ -209,7 +207,6 @@ footer #men-dev {
     top: 0;
 
     width: 180px;
-    height: 280px;
     background: var(--alt-text-color);
 
     padding-top: 4rem;
@@ -248,10 +245,6 @@ footer #men-dev {
 
   header .slide-menu-opened div button:hover {
     outline: 0.5rem solid rgb(255, 255, 255, 0.5);
-  }
-
-  hr {
-    margin: 0 3rem;
   }
 
   #apresentation {

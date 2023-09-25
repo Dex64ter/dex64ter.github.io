@@ -9,12 +9,14 @@
   --text-color: #F4F4F9;
   --alt-text-color: #090F22;
   --line-color: #00A59B;
+  --shadow-color: #303030;
 }
 
 .light {
   --bg-color: #edf4f3;
   --text-color: #00C396;
   --line-color: #047240;
+  --shadow-color: #949494;
 }
 
 body {
@@ -25,12 +27,16 @@ body {
 
 /* Cabeçalho */
 header {
-  margin: 1rem 3.4rem;
+  padding: 1rem 3.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
+
+  background: linear-gradient(-90deg, var(--bg-color), var(--line-color) 100%);
+
+  box-shadow:  7px 7px 14px var(--shadow-color);
 }
 
 header nav {
@@ -58,12 +64,6 @@ header .slide-menu-closed {
 
 header .slide-menu-opened {
   display: none;
-}
-
-/* Barra */
-hr {
-  margin: 0 3.4rem;
-  border: 1px solid var(--line-color);
 }
 
 /* Switch button */
@@ -150,7 +150,7 @@ hr {
   }
 
   header {
-    margin: 1rem 3rem;
+    padding: 1rem 3rem;
   }
 
   header nav {
@@ -210,7 +210,6 @@ hr {
     top: 0;
 
     width: 180px;
-    height: 280px;
     background: var(--alt-text-color);
 
     padding-top: 4rem;
@@ -251,12 +250,7 @@ hr {
     outline: 0.5rem solid rgb(255, 255, 255, 0.5);
   }
 
-  hr {
-    margin: 0 3rem;
-  }
-
   /* Seção de contato */
-
   #section-contact {
     background: #59B689;
 
