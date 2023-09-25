@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #047240;
+  --text-color: #F4F4F9;
+  --alt-text-color: #090F22;
+  --line-color: #00A59B;
+}
+
+.light {
+  --bg-color: #edf4f3;
+  --text-color: #00C396;
+  --line-color: #047240;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+  margin: 1rem 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+
+  transition: font-weight 0.2s;
+}
+
+header nav a:hover {
+  font-weight: 600;
+}
+
+/* Mobile */
+header .slide-menu-closed {
+  display: none;
+}
+
+header .slide-menu-opened {
+  display: none;
+}
+
+/* Barra */
+hr {
+  margin: 0 3.4rem;
+  border: 1px solid var(--line-color);
+}
+
+/* Switch button */
+#switch button {
+  background: white url('../assets/contrast-outline.svg') no-repeat center;
+  width: 32px;
+  height: 32px;
+
+  margin: 18px 3.4rem;
+
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+
+  transition: outline 0.2s;
+}
+
+#switch button:hover {
+  outline: 0.5rem solid var(--line-color);
+}
+
+/* Seção de contato */
+
+#section-contact {
+  background: #59B689;
+
+  width: 25rem;
+  margin: 1.8rem auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 20px;
+  color: #f4f4f9;
+}
+
+#section-contact #ideogram {
+  width: 240px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+
+}
+
+#section-contact h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#section-contact a {
+  width: 348px;
+  text-decoration: none;
+  color: #f4f4f9;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  
+  margin: 4px 26px 8px 26px;
+  padding: 6px 0 6px 46px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  transition: box-shadow 0.2s;
+}
+
+#section-contact a:hover {
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+#section-contact a img {
+  width: 64px;
+}
+
+@media (max-width: 768px) {
+  #switch {
+    display: none;
+  }
+
+  header {
+    margin: 1rem 3rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .slide-menu-closed div {
+    display: none;
+  }
+
+  header .slide-menu-closed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    cursor: pointer;
+  }
+
+  header .slide-menu-closed span {
+    display: block;
+    width: 50px;
+    height: 4.8px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    
+  }
+  
+  header .slide-menu-opened {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .slide-menu-opened span {
+    display: block;
+    width: 25px;
+    height: 4.8px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  header .slide-menu-opened #one{
+    transform: rotate(45deg) translateY(3.5px);
+  }
+
+  header .slide-menu-opened #two{
+    display: none;
+  }
+
+  header .slide-menu-opened #three{
+    transform: rotate(-45deg) translateY(-3.5px);
+  }
+
+  header .slide-menu-opened div {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 180px;
+    height: 280px;
+    background: var(--alt-text-color);
+
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header .slide-menu-opened div a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding-left: 1rem;
+  }
+
+  header .slide-menu-opened div a:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+
+  header .slide-menu-opened div button {
+    margin-left: 1rem;
+
+    display: block;
+    background: white url('../assets/contrast-outline.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+
+    transition: outline 0.2s;
+  }
+
+  header .slide-menu-opened div button:hover {
+    outline: 0.5rem solid rgb(255, 255, 255, 0.5);
+  }
+
+  hr {
+    margin: 0 3rem;
+  }
+
+  /* Seção de contato */
+
+  #section-contact {
+    background: #59B689;
+
+    width: 17rem;
+    margin: 1.8rem auto;
+  }
+
+  #section-contact #ideogram {
+    width: 200px;
+  }
+  
+  #section-contact a {
+    width: 240px;
+    padding-left: 22px;
+  }
+
+  #section-contact a img {
+    width: 40px;
+  }
+
+}

@@ -64,9 +64,10 @@ hr {
   margin: 0 3.4rem;
   border: 1px solid var(--line-color);
 }
+
 /* Switch button */
 #switch button {
-  background: white url('./assets/contrast-outline.svg') no-repeat center;
+  background: white url('../assets/contrast-outline.svg') no-repeat center;
   width: 32px;
   height: 32px;
 
@@ -234,7 +235,7 @@ footer #men-dev {
     margin-left: 1rem;
 
     display: block;
-    background: white url('./assets/contrast-outline.svg') no-repeat center;
+    background: white url('../assets/contrast-outline.svg') no-repeat center;
     width: 30px;
     height: 30px;
     cursor: pointer;

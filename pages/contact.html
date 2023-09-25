@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <title>Portfólio Davi José</title>
+  </head>
+  <body>
+    <header>
+      <strong>DJ</strong>
+      <nav id="desktop">
+        <a href="/">About</a>
+        <a href="">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="slide-menu-closed" onclick="ToggleMenu()">
+        <div>
+          <a href="/">About</a>
+          <a href="">Projects</a>
+          <a href="./contact.html">Contact</a>
+          <button onclick="ToggleTheme()"></button>
+        </div>
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
+      </div>
+    </header>
+    <hr />
+    <div id="switch" onclick="ToggleTheme()">
+      <button></button>
+    </div>
+
+    <div id="section-contact">
+      <img
+        id="ideogram"
+        src="../assets/ideogram-removebg.png"
+        alt="ilustração de telefones e carta representando formas de"
+      />
+      <h3>My Contacts</h3>
+      <a href="tel:86995613851">
+        <img src="../assets/whatsapp.png" alt="ícone do whatsapp">
+        My Number
+      </a>
+      <a href="mailto:davijosantos.dj@gmail.com">
+        <img src="../assets/gmail.png" alt="ícone do gmail">
+        My Email
+      </a>
+      <a href="https://www.linkedin.com/in/davi-santos-3bb8a819b/">
+        <img src="../assets/linkedin.png" alt="ícone do linkedin">
+        My Linkedin
+      </a>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
