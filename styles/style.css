@@ -5,18 +5,21 @@
 }
 
 :root {
-  --bg-color: #047240;
-  --text-color: #F4F4F9;
-  --alt-text-color: #090F22;
-  --line-color: #00A59B;
-  --shadow-color: #303030;
+  --header-text-color: #EDEDED;
+  --bg-color: #444444;
+  --bg-second-color: #171717;
+  --text-color: #EDEDED;
+  --alt-text-color: #0062d1;
+  --line-color: #008bb5;
+  --shadow-color: #949494;
 }
 
 .light {
-  --bg-color: #edf4f3;
-  --text-color: #00C396;
-  --line-color: #047240;
-  --shadow-color: #949494;
+  --bg-color: #EDEDED;
+  --bg-second-color: #eeeeee;
+  --text-color: #222831;
+  --line-color: #00ADB5;
+  --shadow-color: #444444;
 }
 
 body {
@@ -33,8 +36,9 @@ header {
   align-items: center;
   font-size: 32px;
   font-weight: bold;
+  color: var(--header-text-color);
 
-  background: linear-gradient(-90deg, var(--bg-color), var(--line-color) 100%);
+  background: linear-gradient(-90deg, var(--alt-text-color), var(--line-color) 100%);
 
   box-shadow:  7px 7px 14px var(--shadow-color);
 }
@@ -46,7 +50,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--header-text-color);
   font-size: 18px;
   font-weight: 400;
 
@@ -170,7 +174,7 @@ footer #men-dev {
     display: block;
     width: 50px;
     height: 4.8px;
-    background-color: var(--text-color);
+    background-color: var(--header-text-color);
     border-radius: 10px;
     
   }
@@ -184,7 +188,7 @@ footer #men-dev {
     display: block;
     width: 25px;
     height: 4.8px;
-    background-color: var(--text-color);
+    background-color: var(--header-text-color);
     border-radius: 10px;
     cursor: pointer;
   }
@@ -219,7 +223,7 @@ footer #men-dev {
 
   header .slide-menu-opened div a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--header-text-color);
     display: block;
     padding-left: 1rem;
   }

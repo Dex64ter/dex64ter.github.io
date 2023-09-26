@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <title>Portfólio Davi José</title>
+  </head>
+  <body>
+    <header>
+      <strong>DJ</strong>
+      <nav id="desktop">
+        <a href="/">Home</a>
+        <a href="./about.html">About</a>
+        <a href="">Projects</a>
+        <a href="./contact.html">Contact</a>
+
+      </nav>
+
+      <div class="slide-menu-closed" onclick="ToggleMenu()">
+        <div>
+          <a href="/">Home</a>
+          <a href="./about.html">About</a>
+          <a href="">Projects</a>
+          <a href="./contact.html">Contact</a>
+          <button onclick="ToggleTheme()"></button>
+        </div>
+        <span id="one"></span>
+        <span id="two"></span>
+        <span id="three"></span>
+      </div>
+
+    </header>
+
+    <div id="switch" onclick="ToggleTheme()">
+      <button></button>
+    </div>
+
+    <main>
+      
+      <div class="sections">
+
+        <img class="imagem" src="../assets/foto-pessoal.jpg" alt="">
+        <div class="topic-text">
+          <h1>Who I am?</h1>
+          <p>My full name is Davi José Cunha Santos, and I'm a 22-year-old guy born and raised in the city of Teresina in the state of Piauí here in Brazil. I've been deeply interested in technology from a young age, mainly because I enjoy gaming on the computer so much. I've always been available to assist anyone with computer-related matters, both at school and at home, and currently, I'm studying for a career in software development.</p>
+        </div>
+      </div>
+
+      <div class="sections">
+
+        <img class="imagem" src="../assets/foto-trabalhando.jpeg" alt="">
+        <div class="topic-text">
+          <h1>What I know?</h1>
+          <p>I excelled in a Catholic school, engaging in science and math competitions. I improved my computer skills through typing and document formatting. I'm currently studying Computer Science at the Federal University of Piauí and honing my software development skills, including JavaScript, Python, React, React Native, and TypeScript. I'm always seeking new programming challenges.</p>
+        </div>
+      </div>
+
+      <div class="sections">
+        <img class="imagem" src="../assets/mais-uma-foto.jpeg" alt="">
+        <div class="topic-text">
+          <h1>How I am?</h1>
+          <p>I am very dedicated when I commit to something. In a team, I always seek help from my colleagues or the leader to exchange knowledge and reach our goals together. I actively pursue challenges, and even when faced with difficulty, I study and research to ensure I do things properly. I am also very sociable, enjoying conversations and listening. During my free time, I like to play video games with my friends and engage in physical activities.</p>
+        </div>
+      </div>
+    
+    </main>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../script.js" ></script>
+  </body>
+</html>

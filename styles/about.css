@@ -22,7 +22,6 @@
   --shadow-color: #444444;
 }
 
-
 body {
   font-family: 'Inter', sans-serif;
   background: var(--bg-color);
@@ -38,10 +37,9 @@ header {
   font-size: 32px;
   font-weight: bold;
   color: var(--header-text-color);
-
   background: linear-gradient(-90deg, var(--alt-text-color), var(--line-color) 100%);
 
-  box-shadow:  7px 7px 14px var(--shadow-color);
+  box-shadow:  4px 4px 8px 2px var(--shadow-color);
 }
 
 header nav {
@@ -55,7 +53,6 @@ header nav a {
   font-size: 18px;
   font-weight: 400;
 
-  transition: font-weight 0.2s;
 }
 
 header nav a:hover {
@@ -94,63 +91,51 @@ header .slide-menu-opened {
   outline: 0.5rem solid var(--line-color);
 }
 
-/* Seção de contato */
-
-#section-contact {
-  background: var(--shadow-color);
-
-  width: 25rem;
-  margin: 1.8rem auto;
+/* Conteúdo */
+main {
+  margin-top: 48px;
+  padding: 8px 54px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  border-radius: 20px;
-  color: var(--bg-second-color);
-
-  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  gap: 50px;
 }
 
-#section-contact #ideogram {
-  width: 240px;
-  margin-top: 14px;
-  margin-bottom: 10px;
-
-}
-
-#section-contact h3 {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-#section-contact a {
-  width: 348px;
-  text-decoration: none;
-  color: var(--bg-second-color);
+.sections {
+  padding: 1rem 2rem;
+  background-color: var(--bg-second-color);
 
   display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  
-  margin: 4px 26px 8px 26px;
-  padding: 6px 0 6px 46px;
+  justify-content: center;
+  gap: 5rem;
 
-  font-size: 22px;
-  font-weight: bold;
+  background: var();
 
-  transition: box-shadow 0.2s;
+  box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.25);
+  border-radius: 15px;
+
 }
 
-#section-contact a:hover {
-  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.25);
+.sections .imagem {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: url('../assets/foto-pessoal.jpg') no-repeat center/cover;
+  box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.25);
+
 }
 
-#section-contact a img {
-  width: 64px;
+.sections:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
+.topic-text {
+  width: 60%;
+}
+
+/* Media Queries */
+/* Modelo mobiles */
 @media (max-width: 768px) {
   #switch {
     display: none;
@@ -257,25 +242,31 @@ header .slide-menu-opened {
     outline: 0.5rem solid rgb(255, 255, 255, 0.5);
   }
 
-  /* Seção de contato */
-  #section-contact {
-    background: var(--shadow-color);
-
-    width: 17rem;
-    margin: 1.8rem auto;
+  main {
+    padding: 8px 20px;
   }
 
-  #section-contact #ideogram {
-    width: 200px;
-  }
-  
-  #section-contact a {
-    width: 240px;
-    padding-left: 22px;
+  .sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 1rem;
   }
 
-  #section-contact a img {
-    width: 40px;
+  .sections:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
   }
 
+  .topic-text {
+    text-align: center;
+    width: 90%;
+  }
+
+  .topic-text p {
+    text-align: justify;
+  }
 }
