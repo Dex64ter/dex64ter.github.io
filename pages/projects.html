@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/projects.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <strong>DJ</strong>
+    <nav id="desktop">
+      <a href="/">Home</a>
+      <a href="./about.html">About</a>
+      <a href="">Projects</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="slide-menu-closed" onclick="ToggleMenu()">
+      <div>
+        <a href="/">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+        <button onclick="ToggleTheme()"></button>
+      </div>
+      <span id="one"></span>
+      <span id="two"></span>
+      <span id="three"></span>
+    </div>
+  </header>
+  <section>
+    <h2>Projects</h2>
+    <ul id="list-projects"></ul>
+  </section>
+  <script src="../api.js"></script>
+</body>
+</html>
