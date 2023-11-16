@@ -5,21 +5,14 @@
 }
 
 :root {
-  --header-text-color: #EDEDED;
-  --bg-color: #171717;
-  --bg-second-color: #444444;
+  --header-text-color: #F4F4F9;
+  --header-bg-color: #7859f5;
+  --bg-color: #444444;
+  --bg-second-color: #171717;
   --text-color: #EDEDED;
-  --alt-text-color: #0062d1;
-  --line-color: #008bb5;
-  --shadow-color: #949494;
-}
-
-.light {
-  --bg-color: #EDEDED;
-  --bg-second-color: #eeeeee;
-  --text-color: #222831;
-  --line-color: #00ADB5;
-  --shadow-color: #444444;
+  --alt-text-color: #090f22;
+  --line-color: #7859f5;
+  --sections-color: #836999;
 }
 
 body {
@@ -30,16 +23,14 @@ body {
 
 /* Cabeçalho */
 header {
-  padding: 1rem 3.4rem;
+  padding: .6rem 3.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 32px;
   font-weight: bold;
   color: var(--header-text-color);
-  background: linear-gradient(-90deg, var(--alt-text-color), var(--line-color) 100%);
-
-  box-shadow:  4px 4px 8px 2px var(--shadow-color);
+  background: var(--header-bg-color);
 }
 
 header nav {
@@ -49,7 +40,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: var(--bg-second-color);
+  color: var(--header-text-color);
   font-size: 18px;
   font-weight: 400;
 
@@ -57,6 +48,13 @@ header nav a {
 
 header nav a:hover {
   font-weight: 600;
+}
+
+header .img-logo {
+  width: 8.5rem;
+  height: 4rem;
+
+  background: url('../assets/Logo.png') no-repeat center;
 }
 
 /* Mobile */
@@ -103,13 +101,11 @@ main {
 
 .sections {
   padding: 1rem 2rem;
-  background-color: var(--bg-second-color);
+  background-color: var(--sections-color);
 
   display: flex;
   justify-content: center;
   gap: 5rem;
-
-  background: var();
 
   box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.25);
   border-radius: 15px;

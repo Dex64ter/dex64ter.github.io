@@ -5,21 +5,14 @@
 }
 
 :root {
-  --header-text-color: #EDEDED;
+  --header-text-color: #F4F4F9;
+  --header-bg-color: #7859f5;
   --bg-color: #444444;
   --bg-second-color: #171717;
   --text-color: #EDEDED;
-  --alt-text-color: #0062d1;
-  --line-color: #008bb5;
+  --alt-text-color: #090f22;
+  --line-color: #7859f5;
   --shadow-color: #949494;
-}
-
-.light {
-  --bg-color: #EDEDED;
-  --bg-second-color: #eeeeee;
-  --text-color: #222831;
-  --line-color: #00ADB5;
-  --shadow-color: #444444;
 }
 
 body {
@@ -31,7 +24,7 @@ body {
 
 /* Cabeçalho */
 header {
-  padding: 1rem 3.4rem;
+  padding: .6rem 3.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,9 +32,8 @@ header {
   font-weight: bold;
   color: var(--header-text-color);
 
-  background: linear-gradient(-90deg, var(--alt-text-color), var(--line-color) 100%);
+  background: var(--header-bg-color);
 
-  box-shadow:  7px 7px 14px var(--shadow-color);
 }
 
 header nav {
@@ -61,6 +53,13 @@ header nav a:hover {
   font-weight: 600;
 }
 
+header .img-logo {
+  width: 8.5rem;
+  height: 4rem;
+
+  background: url('../assets/Logo.png') no-repeat center;
+}
+
 /* Mobile */
 header .slide-menu-closed {
   display: none;
@@ -69,6 +68,55 @@ header .slide-menu-closed {
 header .slide-menu-opened {
   display: none;
 }
+
+section {
+  margin: 2.5rem 3.4rem 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.list-projects {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+li {
+  position: relative;
+  background: var(--line-color);
+  transition: background 0.2s;
+  padding: 1.2rem 1rem;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+li:hover {
+  background: var(--alt-text-color);
+}
+
+li a h3 {
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+li a span {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  font-size: .8rem;
+  color: var(--alt-text-color);
+}
+
 
 @media (max-width: 768px) {
   #switch {

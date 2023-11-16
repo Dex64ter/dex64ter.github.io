@@ -5,21 +5,14 @@
 }
 
 :root {
-  --header-text-color: #EDEDED;
+  --header-text-color: #F4F4F9;
+  --header-bg-color: #7859f5;
   --bg-color: #444444;
   --bg-second-color: #171717;
   --text-color: #EDEDED;
-  --alt-text-color: #0062d1;
-  --line-color: #008bb5;
+  --alt-text-color: #090f22;
+  --line-color: #7859f5;
   --shadow-color: #949494;
-}
-
-.light {
-  --bg-color: #EDEDED;
-  --bg-second-color: #eeeeee;
-  --text-color: #222831;
-  --line-color: #00ADB5;
-  --shadow-color: #444444;
 }
 
 body {
@@ -30,17 +23,14 @@ body {
 
 /* Cabeçalho */
 header {
-  padding: 1rem 3.4rem;
+  padding: .6rem 3.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 32px;
-  font-weight: bold;
   color: var(--header-text-color);
 
-  background: linear-gradient(-90deg, var(--alt-text-color), var(--line-color) 100%);
-
-  box-shadow:  7px 7px 14px var(--shadow-color);
+  background: var(--header-bg-color);
 }
 
 header nav {
@@ -60,6 +50,13 @@ header nav a:hover {
   font-weight: 600;
 }
 
+header .img-logo {
+  width: 8.5rem;
+  height: 4rem;
+
+  background: url('../assets/Logo.png') no-repeat center;
+}
+
 /* Mobile */
 header .slide-menu-closed {
   display: none;
@@ -69,32 +66,9 @@ header .slide-menu-opened {
   display: none;
 }
 
-/* Switch button */
-#switch button {
-  background: white url('../assets/contrast-outline.svg') no-repeat center;
-  width: 32px;
-  height: 32px;
-
-  margin: 12px 3.4rem;
-
-  border: 0;
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  position: absolute;
-  right: 0;
-
-  transition: outline 0.2s;
-}
-
-#switch button:hover {
-  outline: 0.5rem solid var(--line-color);
-}
-
 /* Apresentação */
 #apresentation {
-  margin: 4rem 4rem 0 4rem;
+  margin: 4rem 4rem 0 3.4rem;
   font-size: 18px;
   
   max-width: 56rem;
@@ -146,10 +120,6 @@ footer #men-dev {
 /* Media Queries */
 /* até 768px de largura */
 @media (max-width: 768px) {
-  #switch {
-    display: none;
-  }
-
   header {
     padding: 1rem 3rem;
   }

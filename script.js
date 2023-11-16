@@ -5,7 +5,7 @@ function ToggleTheme(){
 }
 
 function ToggleMenu(){
-  const menuToggle = document.querySelector('header div');
+  const menuToggle = document.querySelector('#slide-menu');
 
   if (menuToggle.classList.contains('slide-menu-closed')) {
     menuToggle.classList.remove('slide-menu-closed');

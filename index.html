@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,11 +10,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Portfólio Davi José</title>
+    <title>Home | Davi José</title>
   </head>
   <body>
     <header>
-      <strong>DJ</strong>
+      <div class="img-logo"></div>
       <nav id="desktop">
         <a href="/">Home</a>
         <a href="./pages/about.html">About</a>
@@ -23,13 +23,12 @@
 
       </nav>
 
-      <div class="slide-menu-closed" onclick="ToggleMenu()">
+      <div class="slide-menu-closed" id="slide-menu" onclick="ToggleMenu()">
         <div>
           <a href="/">Home</a>
           <a href="./pages/about.html">About</a>
           <a href="">Projects</a>
           <a href="./pages/contact.html">Contact</a>
-          <button onclick="ToggleTheme()"></button>
         </div>
         <span id="one"></span>
         <span id="two"></span>
@@ -38,9 +37,6 @@
 
     </header>
 
-    <div id="switch" onclick="ToggleTheme()">
-      <button></button>
-    </div>
 
     <div id="apresentation">
       Hi, my name is
