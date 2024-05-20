@@ -27,7 +27,7 @@ export function About() {
             Federal University of Piauí, I&#39;ve embraced the ever-evolving
             world of technology with enthusiasm. With a keen eye for detail and
             a commitment to continuous learning, I&#39;m dedicated boundaries of
-            what&#39;s possible in web development. Nice to meet meet you!
+            what&#39;s possible in web development. Nice to meet you!
           </p>
         </MainContent>
       </MainAbout>

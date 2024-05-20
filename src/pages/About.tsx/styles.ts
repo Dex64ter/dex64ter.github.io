@@ -30,6 +30,11 @@ export const MainContent = styled.div`
   background: ${(props) => props.theme.colors.background};
   border-radius: 36px;
   padding: 1.25rem;
+
+  p {
+    text-align: justify;
+    font-size: 1.25rem;
+  }
 `
 
 export const ImgBox = styled.div`
@@ -39,6 +44,6 @@ export const ImgBox = styled.div`
   justify-content: center;
 
   img {
-    max-width: 200px;
+    max-width: 300px;
   }
 `
