@@ -116,7 +116,7 @@ export function ProjectItem({
         </DescriptionContent>
       </ProjectContent>
       <ImgContainer>
-        <img src={getImage(name)} alt="" />
+        <img src={getImage(name)} alt={`Imagem do projeto ${name}`} />
       </ImgContainer>
     </ItemContainer>
   )

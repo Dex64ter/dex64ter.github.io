@@ -16,7 +16,7 @@ export function About() {
           <ImgBox>
             <img
               src={FotoProfile}
-              alt="Foto de perfil do Davi José menino bonito, moreno de
+              alt="Foto de perfil do Davi José, moreno de
               óculos e muito sorridente"
             />
           </ImgBox>
