@@ -17,6 +17,7 @@ Here are some ideas to get you started:
   <h2>🌱 I’m currently learning</h2>
   <ul>
     <li>ReactJS</li>
+    <li>Angular</li>
     <li>TypeScript</li>
     <li>Python</li>
     <li>HTML</li>
