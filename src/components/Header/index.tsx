@@ -24,7 +24,7 @@ export function Header() {
           <a href="https://github.com/Dex64ter">
             <GithubLogo size={24} />
           </a>
-          <a href="https://www.instagram.com/davi.jozedjs/">
+          <a href="https://www.instagram.com/davijse.dev/">
             <InstagramLogo size={24} />
           </a>
         </SocialMedia>
