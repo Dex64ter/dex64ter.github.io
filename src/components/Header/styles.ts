@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   width: 100%;
   padding: 1.5rem 0;
-  background: ${(props) => props.theme.colors.green};
-  color: ${(props) => props.theme.colors['base-text']};
+  background: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.orange};
 `
 
 export const HeaderContent = styled.div`
@@ -25,11 +25,11 @@ export const HeaderNav = styled.nav`
     font-size: 1.25rem;
     font-family: 'Comfortaa', sans-serif;
     text-decoration: none;
-    color: ${(props) => props.theme.colors['base-text']};
+    color: ${(props) => props.theme.colors.orange};
 
     &:hover {
-      border-bottom: 1px solid ${(props) => props.theme.colors['base-text']};
-      transition: 0.2s;
+      border-bottom: 1px solid ${(props) => props.theme.colors.orange};
+      transition: border-bottom 0.2s ease-in-out;
     }
   }
 `
@@ -41,6 +41,6 @@ export const SocialMedia = styled.div`
   text-decoration: none;
 
   svg {
-    color: ${(props) => props.theme.colors['base-text']};
+    color: ${(props) => props.theme.colors.orange};
   }
 `
