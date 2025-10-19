@@ -1,61 +1,36 @@
 import styled from 'styled-components'
 
 export const ItemContainer = styled.li`
-  max-height: calc(100vh - 4.25rem);
-  width: 100%;
-  display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 20px;
-`
-
-export const ProjectContent = styled.div`
-  padding: 1.25rem;
+  min-width: 280px;
+  background: linear-gradient(135deg, #292220, #1a1a1a);
 
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
-  gap: 1.25rem;
+  border: 1px solid ${(props) => props.theme.colors.orange};
+  border-radius: 3px;
 
-  h2 {
-    font-size: 2.25rem;
-  }
+  padding: 2rem 1rem;
 `
 
 export const DescriptionContent = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2.5rem;
-
-  padding: 0.5rem 2rem;
-  border-left: 1px solid ${(props) => props.theme.colors.green};
+  align-items: self-start;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
 `
 
 export const Description = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
 
   p {
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
-  span {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
     color: ${(props) => props.theme.colors['base-placeholder']};
-  }
-`
-
-export const RolesLink = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  p {
-    padding: 0.5rem 0;
-
-    border-top: 1px solid ${(props) => props.theme.colors.white};
-    border-bottom: 1px solid ${(props) => props.theme.colors.white};
   }
 `
 
@@ -64,40 +39,25 @@ export const AcessLinks = styled.div`
   gap: 1rem;
 
   a {
-    padding: 1rem 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1;
-
-    background-color: ${(props) => props.theme.colors.green};
-    color: ${(props) => props.theme.colors['base-text']};
-
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: bold;
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: #ffffff;
     text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    margin-top: 1rem;
 
     &:hover {
-      opacity: 0.8;
-      transition: 0.2s;
+      transition: all 0.3s ease;
+      background: transparent;
+      border-color: #ff6b35;
+      color: #ff6b35;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
     }
-  }
-`
-
-export const ImgContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.green};
-  height: 320px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
   }
 `

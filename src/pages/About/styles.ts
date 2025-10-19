@@ -22,7 +22,7 @@ const fadeIn = keyframes`
 
 export const AboutContainer = styled.div`
   min-height: 100vh;
-  background: #1a1a1a;
+  background: ${(props) => props.theme.colors.background};
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -186,6 +186,29 @@ export const Subtitle = styled.h3`
 
   @media (max-width: 480px) {
     font-size: 1.6rem;
+  }
+`
+
+export const ButtonLink = styled.button`
+  display: flex-end;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-top: 1rem;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background: transparent;
+    border-color: #ff6b35;
+    color: #ff6b35;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
   }
 `
 

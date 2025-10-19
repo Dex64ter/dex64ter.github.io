@@ -8,10 +8,14 @@ import {
   Shape,
   ContentText,
   Subtitle,
+  ButtonLink,
 } from './styles'
 import FotoProfile from '../../assets/TD4_4321.jpg'
+import { useScrollTo } from '../../hooks/useScrollTo'
 
 export function About() {
+  const { scrollToSection } = useScrollTo()
+
   return (
     <AboutContainer id="about">
       <FloatingShapes>
@@ -60,6 +64,11 @@ export function About() {
             dedicated to pushing the boundaries of what&apos;s possible in web
             development. Nice to meet you!
           </ContentText>
+          <div style={{ display: 'flex', flex: 1, justifyContent: 'flex-end' }}>
+            <ButtonLink onClick={() => scrollToSection('work')}>
+              See my work
+            </ButtonLink>
+          </div>
         </MainContent>
       </MainAbout>
     </AboutContainer>

@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const float = keyframes`
   0%, 100% {
@@ -29,7 +29,7 @@ const pulse = keyframes`
 `
 
 export const HomeContainer = styled.div`
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.white};
 
@@ -190,7 +190,7 @@ export const Greeting = styled.span`
   }
 `
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled.button`
   display: inline-block;
   padding: 1rem 2.5rem;
   background: linear-gradient(135deg, #ff6b35, #f7931e);
@@ -204,6 +204,7 @@ export const ButtonLink = styled(Link)`
   margin-top: 1rem;
 
   &:hover {
+    transition: all 0.3s ease;
     background: transparent;
     border-color: #ff6b35;
     color: #ff6b35;
@@ -221,8 +222,8 @@ export const AvatarContainer = styled.div`
   position: relative;
 
   img {
-    border: 1px;
-    max-width: 1500px;
+    /* border: 1px; */
+    max-width: 4500px;
     width: 100%;
     height: auto;
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
