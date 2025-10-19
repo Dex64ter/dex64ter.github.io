@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Piauí Primeira Infância",
+      "description": "Projeto voltado para o desenvolvimento integral das crianças de 0 a 6 anos no estado do Piauí.",
+      "url": "https://ppi.pi.gov.br/"
+    },
+    {
+      "id": 2,
+      "name": "Paciente Integrado",
+      "description": "Projeto voltado para a integração do paciente no sistema de saúde.",
+      "url": "https://paciente-integrado.pi.gov.br/"
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "description": "Description of Project 3",
+      "url": "https://github.com/user/project3"
+    },
+    {
+      "id": 4,
+      "name": "Project 4",
+      "description": "Description of Project 3",
+      "url": "https://github.com/user/project3"
+    },
+    {
+      "id": 5,
+      "name": "Project 5",
+      "description": "Description of Project 3",
+      "url": "https://github.com/user/project3"
+    }
+  ]
+}
