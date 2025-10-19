@@ -31,7 +31,7 @@ const pulse = keyframes`
 
 export const SkillsContainer = styled.section`
   min-height: 100vh;
-  background: #1a1a1a;
+  background: ${(props) => props.theme.colors.background};
   color: #ffffff;
   display: flex;
   flex-direction: column;

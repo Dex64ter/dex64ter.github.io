@@ -1,4 +1,11 @@
 import {
+  SiTypescript,
+  SiStyledcomponents,
+  SiNestjs,
+  SiMysql,
+  SiAndroidstudio,
+} from 'react-icons/si'
+import {
   SkillsContainer,
   SkillsTitle,
   SkillsGrid,
@@ -8,19 +15,19 @@ import {
   FloatingShapes,
   Shape,
 } from './styles'
-import { 
-  FaHtml5, 
-  FaCss3Alt, 
-  FaJs, 
-  FaReact, 
+import {
+  FaAngular,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
   FaNode,
-  FaDatabase,
   FaPython,
   FaGit,
   FaFigma,
-  FaDocker,
+  FaGithub,
 } from 'react-icons/fa'
-import {  } from 'react-icons/fa'
+import { FaFlutter } from 'react-icons/fa6'
 
 interface SkillItemProps {
   name: string
@@ -29,18 +36,22 @@ interface SkillItemProps {
 }
 
 const skillsData: SkillItemProps[] = [
-  { name: 'HTML', icon: <FaHtml5 />, color: '#E34C26' },
-  { name: 'CSS', icon: <FaCss3Alt />, color: '#1572B6' },
-  { name: 'JavaScript', icon: <FaJs />, color: '#F7DF1E' },
-  { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
-  { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-  { name: 'Node.js', icon: <FaNode />, color: '#68A063' },
-  { name: 'Python', icon: <FaPython />, color: '#3776AB' },
-  { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
-  { name: 'Styled Components', icon: <SiStyledComponents />, color: '#DB7093' },
-  { name: 'Git', icon: <FaGit />, color: '#F1502F' },
-  { name: 'Figma', icon: <FaFigma />, color: '#F24E1E' },
-  { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
+  { name: 'HTML', icon: <FaHtml5 />, color: '#d6d6d6' },
+  { name: 'CSS', icon: <FaCss3Alt />, color: '#d6d6d6' },
+  { name: 'JavaScript', icon: <FaJs />, color: '#d6d6d6' },
+  { name: 'TypeScript', icon: <SiTypescript />, color: '#d6d6d6' },
+  { name: 'Angular', icon: <FaAngular />, color: '#d6d6d6' },
+  { name: 'React', icon: <FaReact />, color: '#d6d6d6' },
+  { name: 'Flutter', icon: <FaFlutter />, color: '#d6d6d6' },
+  { name: 'Node.js', icon: <FaNode />, color: '#d6d6d6' },
+  { name: 'Nest.js', icon: <SiNestjs />, color: '#d6d6d6' },
+  { name: 'Python', icon: <FaPython />, color: '#d6d6d6' },
+  { name: 'MySQL', icon: <SiMysql />, color: '#d6d6d6' },
+  { name: 'Styled Components', icon: <SiStyledcomponents />, color: '#d6d6d6' },
+  { name: 'Git', icon: <FaGit />, color: '#d6d6d6' },
+  { name: 'GitHub', icon: <FaGithub />, color: '#d6d6d6' },
+  { name: 'Figma', icon: <FaFigma />, color: '#d6d6d6' },
+  { name: 'Android Studio', icon: <SiAndroidstudio />, color: '#d6d6d6' },
 ]
 
 export function Skills() {
@@ -53,13 +64,11 @@ export function Skills() {
       </FloatingShapes>
 
       <SkillsTitle>My Skills</SkillsTitle>
-      
+
       <SkillsGrid>
         {skillsData.map((skill) => (
           <SkillCard key={skill.name}>
-            <SkillIcon color={skill.color}>
-              {skill.icon}
-            </SkillIcon>
+            <SkillIcon color={skill.color}>{skill.icon}</SkillIcon>
             <SkillName>{skill.name}</SkillName>
           </SkillCard>
         ))}

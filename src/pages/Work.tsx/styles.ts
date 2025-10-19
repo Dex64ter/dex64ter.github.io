@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const WorkContainer = styled.div`
-  min-height: 80vh;
   max-width: 100vw;
   margin-top: 2.5rem;
   padding: 0 8%;

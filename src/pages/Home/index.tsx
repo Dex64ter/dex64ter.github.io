@@ -15,6 +15,8 @@ import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { About } from '../About/index.tsx'
 import { useScrollTo } from '../../hooks/useScrollTo.ts'
 import { Work } from '../Work.tsx/index.tsx'
+import { Contact } from '../Contact/index.tsx'
+import { Skills } from '../Skills/index.tsx'
 
 export function Home() {
   const { scrollToSection } = useScrollTo()
@@ -95,8 +97,16 @@ export function Home() {
         <About />
       </section>
 
-      <section id={'work'} style={{ minHeight: '100vh', padding: '2rem' }}>
+      <section id={'work'} style={{ padding: '2rem' }}>
         <Work />
+      </section>
+
+      <section id={'habilidades'} style={{ minHeight: '100vh' }}>
+        <Skills />
+      </section>
+
+      <section id={'contact'} style={{ minHeight: '100vh' }}>
+        <Contact />
       </section>
     </>
   )
