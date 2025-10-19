@@ -80,9 +80,7 @@ export const CarouselButton = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+    display: none;
   }
 `
 
