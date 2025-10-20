@@ -3,32 +3,38 @@
     {
       "id": 1,
       "name": "Piauí Primeira Infância",
-      "description": "Projeto voltado para o desenvolvimento integral das crianças de 0 a 6 anos no estado do Piauí.",
+      "description": "Project web/mobile aimed at the integral development of children aged 0 to 6 in the state of Piauí",
       "url": "https://ppi.pi.gov.br/"
     },
     {
       "id": 2,
       "name": "Paciente Integrado",
-      "description": "Projeto voltado para a integração do paciente no sistema de saúde.",
+      "description": "Project web/mobile aimed at integrating patients into the healthcare system",
       "url": "https://paciente-integrado.pi.gov.br/"
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "description": "Description of Project 3",
-      "url": "https://github.com/user/project3"
+      "name": "Coffee Delivery",
+      "description": "Project web aimed at delivering coffee to customers",
+      "url": "https://dex64ter.github.io/Coffee-Delivery/"
     },
     {
       "id": 4,
-      "name": "Project 4",
-      "description": "Description of Project 3",
-      "url": "https://github.com/user/project3"
+      "name": "Dinamic Digital Clock",
+      "description": "A dynamic digital clock styled with HTML, CSS and JavaScript",
+      "url": "https://dex64ter.github.io/Dinamic-Digital-Clock/"
     },
     {
       "id": 5,
-      "name": "Project 5",
-      "description": "Description of Project 3",
-      "url": "https://github.com/user/project3"
+      "name": "FAQ Page",
+      "description": "Example of a FAQ page",
+      "url": "https://dex64ter.github.io/FAQ/"
+    },
+    {
+      "id": 6,
+      "name": "To-Do List",
+      "description": "Simple and intuitive to-do list to organize, prioritize and track your daily tasks",
+      "url": "https://dex64ter.github.io/ToDo-List/"
     }
   ]
 }
