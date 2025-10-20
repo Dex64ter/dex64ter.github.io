@@ -20,6 +20,7 @@ export function Contact() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [phone, setPhone] = useState('')
+  const [loading, setLoading] = useState(false)
 
   function resetForm() {
     setName('')
@@ -28,7 +29,8 @@ export function Contact() {
     setPhone('')
   }
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
+    setLoading(true)
     event.preventDefault()
     const formMessageToMe = {
       name,
@@ -37,7 +39,7 @@ export function Contact() {
       phone,
     }
 
-    emailjs
+    await emailjs
       .send(
         'service_iz1z5jo',
         'template_b1now9q',
@@ -47,10 +49,12 @@ export function Contact() {
       .then(
         () => {
           toast.success('SUCCESS!! Thanks for your message.')
+          setLoading(false)
         },
         (error) => {
           toast.error('FAILED... Please try again later.')
           console.log(error.text)
+          setLoading(false)
         },
       )
     resetForm()
@@ -141,7 +145,9 @@ export function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
-            <SubmitButton type="submit">Send message</SubmitButton>
+            <SubmitButton type="submit">
+              {loading ? 'Sending...' : 'Send message'}
+            </SubmitButton>
           </FormContact>
         </FormContainer>
       </TemplateContact>

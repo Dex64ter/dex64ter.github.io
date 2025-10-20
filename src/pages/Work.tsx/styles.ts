@@ -59,7 +59,6 @@ export const CarouselButton = styled.button`
   top: 40%;
   background: #292220;
   opacity: 0.75;
-  /* border: 1px solid #ff6b35; */
   border-radius: 50%;
   color: #fff;
   width: 25px;
